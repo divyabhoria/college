@@ -8,4 +8,15 @@ begin
  dbms_output.put_line(message);
 end;
 /
-
+--------------------------------------------------------------------------------------------------------------------------------------------
+declare
+ subtype name is char(20);
+ subtype message is varchar2(100);
+ salutation name;
+ greetings message;
+begin
+ salutation:='reader';
+ greetings:='welcome to the world of pl/sql';
+ dbms_output.put_line('hello '||salutation || greetings);
+end;
+/
