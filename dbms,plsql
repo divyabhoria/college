@@ -1,0 +1,11 @@
+DECLARE
+    --variable declaration
+ message varchar2(20):='hello world';
+begin
+    /*
+*pl sql
+*/
+ dbms_output.put_line(message);
+end;
+/
+
