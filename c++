@@ -240,3 +240,226 @@ int main(){
     return 0;
 }
 
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+void geeks(){
+    int var=10;
+    int* ptr;
+    ptr=&var;
+    cout<<"value of ptr"<<ptr<<"\n";
+    cout<<"value of var"<<var<<"\n";
+    cout<<"value of *ptr"<<*ptr<<"\n";
+    
+}
+int main() {
+    geeks();
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[4]={1,2,3,4};
+    int arr1[4];
+    arr1[0]=1;
+    arr1[1]=2;
+    arr1[2]=3;
+    arr1[3]=4;
+    cout<<arr1[3]<<endl;
+    for(int i;i<4;i++){
+        cout<<"the value of marks are  "<<arr[i]<<endl;
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+#include<iostream> 
+using namespace std; 
+int main(){ 
+ 
+int m; 
+int n; 
+cout << "enter the  2D size of array\n"<< endl; 
+cin>>m>>n;
+int arr[m][n];
+cout << "enter the elements\n"<< endl; 
+for(int i=0;i<m;i++){
+    for(int j=0;j<n;j++){
+        cin>>arr[i][j];
+    }
+}
+cout << "value of array is \n"<< endl; 
+for(int i=0;i<m;i++){
+    for(int j=0;j<n;j++){
+        cout<<arr[i][j];
+    }
+}
+int x;
+cout << "enter the value who's address you want to find \n"<< endl; 
+cin>>x;
+for(int i=0;i<m;i++){
+    for(int j=0;j<n;j++){
+        if(arr[i][j]==x){
+            cout<<"the value present at address"<<i<<j<<"\n"<<endl;
+        }
+    }
+}
+return 0; 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int m;
+    int sum_left = 0;
+    int sum_right_column = 0;
+
+    cout << "Enter the 2D size of the array: " << endl;
+    cin >> m;
+    int arr[m][m];
+
+    cout << "Enter the elements: " << endl;
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < m; j++) {
+            cin >> arr[i][j];
+        }
+    }
+
+    cout << "The values inside the array are: " << endl;
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < m; j++) {
+            cout << arr[i][j] << "\t";
+        }
+        cout << " " << endl;
+    }
+
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < m; j++) {
+            if (i == j) {
+                sum_left += arr[i][j];
+            }
+            if (j == m - 1) {
+                sum_right_column += arr[i][j];
+            }
+        }
+    }
+
+    cout << "Sum of Left Diagonal: " << sum_left << endl;
+    cout << "Sum of Rightmost Column: " << sum_right_column << endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    int arr[n];
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int largest=arr[0];
+    for(int i=1;i<n;i++){
+        if(arr[i]>largest){
+            largest=arr[i];
+        }
+    }
+    cout << "The largest element in the array is: " << largest << endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+class myclass{
+    public:
+    int mynum;
+    string mystring;
+};
+int main(){
+    myclass myobj;
+    myobj.mynum=100;
+    myobj.mystring="some text";
+    cout << myobj.mynum << "\n"; 
+    cout << myobj.mystring; 
+    return 0;
+}
+
+
+
+
+
+
+
+
+
